@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Award, BookOpen, Code, Database, Globe, Mail, Phone, MapPin, Calendar, ExternalLink, Github, Linkedin, Download, Send, User, Briefcase, GraduationCap, Target, Zap, Shield, Cpu } from 'lucide-react';
+import { Award, BookOpen, Code, Database, Globe, Mail, Phone, MapPin, Calendar, ExternalLink, Github, Linkedin, Download, Send, user, Briefcase, GraduationCap, Target, Zap, Shield, Cpu } from 'lucide-react';
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -227,7 +227,7 @@ function App() {
         </div>
       </section>
 
-      {/* About Section */}
+{/* About Section */}
 <section id="about" className="py-20 bg-white">
   <div className="max-w-7xl mx-auto px-6">
     <div className="animate-on-scroll opacity-0 translate-y-10 transition-all duration-1000">
@@ -250,15 +250,27 @@ function App() {
             I'm actively involved in research and have presented work on Sindhi text classification using Modified TF-IDF at MDSRIC. Currently developing smart security tools using machine learning to solve critical problems in web vulnerability detection and malware classification.
           </p>
         </div>
+
+        <div className="mt-8 grid grid-cols-2 gap-6">
+          <div className="text-center p-4 bg-gradient-to-br from-indigo-50 to-cyan-50 rounded-xl">
+            <div className="text-2xl font-bold text-indigo-600">3.71</div>
+            <div className="text-sm text-gray-600">GPA</div>
+          </div>
+          <div className="text-center p-4 bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl">
+            <div className="text-2xl font-bold text-purple-600">5+</div>
+            <div className="text-sm text-gray-600">Projects</div>
+          </div>
+        </div>
       </div>
+
       {/* Image Side */}
       <div className="animate-on-scroll opacity-0 translate-x-[50px] transition-all duration-1000 delay-500">
         <div className="relative">
           <div className="w-80 h-80 mx-auto rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-cyan-500 p-2 hover:scale-105 transition-transform duration-500">
             <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
               <img
-                src="public\user.png"
-                alt="Muhammad Hamza"
+                src={`${import.meta.env.BASE_URL}user.png`}
+                alt="USER"
                 className="object-cover w-full h-full rounded-full"
               />
             </div>
