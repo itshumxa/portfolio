@@ -257,7 +257,7 @@ function App() {
           <div className="w-80 h-80 mx-auto rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-cyan-500 p-2 hover:scale-105 transition-transform duration-500">
             <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
               <img
-                src="user.png"
+                src="public\user.png"
                 alt="Muhammad Hamza"
                 className="object-cover w-full h-full rounded-full"
               />
